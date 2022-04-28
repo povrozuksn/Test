@@ -4,18 +4,44 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
 <tt>
-Build started on: <u>14-04-2022 at 18:56.55</u><br />
-Build ended on: <u>14-04-2022 at 18:57.00</u><p />
+Build started on: <u>28-04-2022 at 18:50.57</u><br />
+Build ended on: <u>28-04-2022 at 18:51.01</u><p />
 <b>-------------- Build: Debug in Test1 (compiler: GNU GCC Compiler)---------------</b><br />
 g++.bat -Wall -fexceptions  -g     -c C:\Users\root\source\repos\Test1\main.cpp -o obj\Debug\main.o<br />
 ------------------------------------------------------------------------------------------------------<br />
-Compilation is OK<br />
+Compilation ERRORS:<br />
+<br />
+C:\Users\root\source\repos\Test1\main.cpp: In function 'bool click_answer(int)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:3:6: warning: no previous declaration for 'bool click_answer(int)' [-Wmissing-declarations]</font><br />
+ bool click_answer(int y)<br />
+      ^<br />
+C:\Users\root\source\repos\Test1\main.cpp: In function 'void draw_answer(int, std::string)':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:23:6: warning: no previous declaration for 'void draw_answer(int, std::string)' [-Wmissing-declarations]</font><br />
+ void draw_answer(int y, string text)<br />
+      ^<br />
+C:\Users\root\source\repos\Test1\main.cpp: In constructor 'Form::Form()':<br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:12:8: warning: 'Form::text_question' should be initialized in the member initialization list [-Weffc++]</font><br />
+ struct Form<br />
+        ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:12:8: warning: 'Form::text_answer1' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:12:8: warning: 'Form::cost_answer1' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:12:8: warning: 'Form::text_answer2' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:12:8: warning: 'Form::cost_answer2' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:12:8: warning: 'Form::text_answer3' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:12:8: warning: 'Form::cost_answer3' should be initialized in the member initialization list [-Weffc++]</font><br />
+C:\Users\root\source\repos\Test1\main.cpp: In function 'int main()':<br />
+C:\Users\root\source\repos\Test1\main.cpp:40:10: note: synthesized method 'Form::Form()' first required here <br />
+     Form form;<br />
+          ^<br />
+<font color="#0000ff">C:\Users\root\source\repos\Test1\main.cpp:125:15: warning: comparisons like 'X&lt;=Y&lt;=Z' do not have their mathematical meaning [-Wparentheses]</font><br />
+     else if(3 &lt;= result &lt;= 4)<br />
+               ^<br />
 ------------------------------------------------------------------------------------------------------<br />
 Autosaving to the Git repository in C:/Users/root/source/repos/Test1/.git-auto/... <br />
 g++.exe  -o bin\Debug\Test1.exe obj\Debug\main.o     -mwindows<br />
-Output size is 2,17 MB<br />
+Output size is 2,18 MB<br />
 <font color="#0000ff">Process terminated with status 0 (0 minutes, 4 seconds)</font><br />
-<font color="#0000ff">0 errors, 0 warnings (0 minutes, 4 seconds)</font><br />
+<font color="#0000ff">0 errors, 10 warnings (0 minutes, 4 seconds)</font><br />
 </tt>
 </body>
 </html>
